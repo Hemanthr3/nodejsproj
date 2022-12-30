@@ -160,5 +160,8 @@ const data = {
 
 
 export default function handler(req, res) {
-  res.status(200).json(data)
+    const cities = data["events_categories"].map((obj)=>{
+        return {city_name:obj.id}
+    })
+  res.status(200).json(cities)
 }

@@ -1,6 +1,4 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
-const data = {
+{
   "events_categories": [
     {
       "id": "london",
@@ -155,10 +153,4 @@ const data = {
       "emails_registered": ["alicia@gmail.com", "monica@gmail.com"]
     }
   ]
-}
-
-
-
-export default function handler(req, res) {
-  res.status(200).json(data)
 }
